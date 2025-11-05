@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm currently working on my Master's in CS, specializing in Human Language Technology ([HLT](([HLT](https://www.clsp.jhu.edu/human-language-technology-masters/)))) at [Johns Hopkins University](https://engineering.jhu.edu/).
+I'm currently working on my Master's in CS, specializing in Human Language Technology ([HLT]([HLT](https://www.clsp.jhu.edu/human-language-technology-masters/))) at [Johns Hopkins University](https://engineering.jhu.edu/).
 
 <!-- My primary research interests lie in multimodal understanding and  -->
 
