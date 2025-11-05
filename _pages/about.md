@@ -24,8 +24,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm currently working on my Master's in CS, specializing in Human Language Technology ([HLT]([HLT](https://www.clsp.jhu.edu/human-language-technology-masters/))) at [Johns Hopkins University](https://engineering.jhu.edu/).
-
-<!-- My primary research interests lie in multimodal understanding and  -->
+I'm currently working on my Master's in CS, specializing in Human Language Technology ([HLT](<[HLT](https://www.clsp.jhu.edu/human-language-technology-masters/)>)) at [Johns Hopkins University](https://engineering.jhu.edu/).
 
 Before Johns Hopkins, I earned my B.S. at The Ohio State University where I was fortunate to be advised by [Dr. Srinivasan Parthasarathy](https://scholar.google.com/citations?hl=en&user=2mjUsP8AAAAJ&view_op=list_works&sortby=pubdate). I defended my Honors Thesis about efficient multimodal models, including our work optimizing the [Segment Anything Model](https://segment-anything.com/) for inference on the edge.
