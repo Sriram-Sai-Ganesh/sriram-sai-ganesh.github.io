@@ -8,7 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
+  more_info: श्रीरामः
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,4 +26,4 @@ latest_posts:
 
 I'm currently working on my Master's in CS, specializing in Human Language Technology ([HLT](<[HLT](https://www.clsp.jhu.edu/human-language-technology-masters/)>)) at [Johns Hopkins University](https://engineering.jhu.edu/).
 
-Before Johns Hopkins, I earned my B.S. at The Ohio State University where I was fortunate to be advised by [Dr. Srinivasan Parthasarathy](https://scholar.google.com/citations?hl=en&user=2mjUsP8AAAAJ&view_op=list_works&sortby=pubdate). I defended my Honors Thesis about efficient multimodal models, including our work optimizing the [Segment Anything Model](https://segment-anything.com/) for inference on the edge.
+Previously, I earned my B.S. at The Ohio State University where I was fortunate to be advised by [Dr. Srinivasan Parthasarathy](https://scholar.google.com/citations?hl=en&user=2mjUsP8AAAAJ&view_op=list_works&sortby=pubdate). I studied efficient multimodal models while working on my Honors Thesis, including our work optimizing the [Segment Anything Model](https://segment-anything.com/) for inference on the edge.
