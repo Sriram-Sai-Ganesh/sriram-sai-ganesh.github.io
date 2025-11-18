@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduated from The Ohio State University. Go Bucks! :chestnut:
+Graduated with a B.S. in C.S.E. from The Ohio State University. Go Bucks! :chestnut:
