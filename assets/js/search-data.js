@@ -9,21 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects",
-          title: "projects",
-          description: "A growing collection of your cool projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-teaching",
-          title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
-          },
-        },{id: "nav-cv",
+  },{id: "nav-cv",
           title: "cv",
           description: "",
           section: "Navigation",
@@ -407,8 +393,8 @@ ninja.data = [{
           section: "News",},{id: "news-defended-my-undergrad-thesis",
           title: 'Defended my undergrad thesis.',
           description: "",
-          section: "News",},{id: "news-graduated-from-the-ohio-state-university-go-bucks-chestnut",
-          title: 'Graduated from The Ohio State University. Go Bucks! :chestnut:',
+          section: "News",},{id: "news-graduated-with-a-b-s-in-c-s-e-from-the-ohio-state-university-go-bucks-chestnut",
+          title: 'Graduated with a B.S. in C.S.E. from The Ohio State University. Go Bucks!...',
           description: "",
           section: "News",},{id: "news-starting-my-mse-in-human-language-technologies-at-johns-hopkins",
           title: 'Starting my MSE in Human Language Technologies at Johns Hopkins 🐦',
