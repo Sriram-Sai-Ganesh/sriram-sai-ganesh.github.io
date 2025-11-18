@@ -5,7 +5,12 @@
 If you found this useful, please cite this as:
 
 {% capture citation_quote -%}
+{% assign full_last_name = site.middle_name | append: ' ' | append: site.last_name %}
+{% if full_last_name contains 'Sai Ganesh' %}
+> **{{ site.last_name }}, {{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %}** ({{ page.date | date: "%b %Y" }}). {{ page.title }}. {% if site.title != 'blank' %}{{ site.title }}. {% endif %}{{ site.url }}.
+{% else %}
 > {{ site.last_name }}, {{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} ({{ page.date | date: "%b %Y" }}). {{ page.title }}. {% if site.title != 'blank' %}{{ site.title }}. {% endif %}{{ site.url }}.
+{% endif %}
 {%- endcapture %}
 {{ citation_quote | markdownify }}
 

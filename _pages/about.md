@@ -16,7 +16,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
@@ -26,4 +26,4 @@ latest_posts:
 
 I'm currently working on my Master's in CS, specializing in Human Language Technology ([HLT](<[HLT](https://www.clsp.jhu.edu/human-language-technology-masters/)>)) at [Johns Hopkins University](https://engineering.jhu.edu/).
 
-Previously, I earned my B.S. at The Ohio State University where I was fortunate to be advised by [Dr. Srinivasan Parthasarathy](https://scholar.google.com/citations?hl=en&user=2mjUsP8AAAAJ&view_op=list_works&sortby=pubdate). I studied efficient multimodal models while working on my Honors Thesis, including our work optimizing the [Segment Anything Model](https://segment-anything.com/) for inference on the edge.
+Previously, I earned my B.S. at The Ohio State University where I was fortunate to be advised by [Dr. Srinivasan Parthasarathy](https://scholar.google.com/citations?hl=en&user=2mjUsP8AAAAJ&view_op=list_works&sortby=pubdate). I studied efficient language and vision models while working on my Honors Thesis, including our work optimizing the [Segment Anything Model](https://segment-anything.com/) for inference on the edge.
