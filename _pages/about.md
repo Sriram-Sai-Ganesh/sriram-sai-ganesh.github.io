@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: MSE CS @ Johns Hopkins
+subtitle: M.S.E. at Johns Hopkins University
 
 profile:
   align: right
@@ -24,6 +24,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm currently working on my Master's in CS, specializing in Human Language Technology ([HLT](<[HLT](https://www.clsp.jhu.edu/human-language-technology-masters/)>)) at [Johns Hopkins University](https://engineering.jhu.edu/).
+I am a **Masters student in Computer Science** ([HLT](<[HLT](https://www.clsp.jhu.edu/human-language-technology-masters/)>)) at Johns Hopkins University, where I am advised by [Dr. Jason Eisner](https://www.cs.jhu.edu/~jason/) at the [Center for Language and Speech Processing](https://www.clsp.jhu.edu/).
 
-Previously, I earned my B.S. at The Ohio State University where I was fortunate to be advised by [Dr. Srinivasan Parthasarathy](https://scholar.google.com/citations?hl=en&user=2mjUsP8AAAAJ&view_op=list_works&sortby=pubdate). I studied efficient language and vision models while working on my Honors Thesis, including our work optimizing the [Segment Anything Model](https://segment-anything.com/) for inference on the edge.
+Broadly, I am interested in **generalizable methods for compute-optimal machine learning**. Attention as a primitive has been a powerful tool for sequence-modeling language and vision tasks; can we utilize this expressive power without paying a cost that is quadratic in sequence length?
+
+Currently, I am working on a family of **transformer decoder architectures** that will allow for **much faster inference**. Improved throughput enables faster test-time reasoning, speculative decoding, and lower-latency agentic workflows, among other applications.
+
+Before Johns Hopkins, I earned my B.S. at The Ohio State University where I was fortunate to be advised by [Dr. Srinivasan Parthasarathy](https://scholar.google.com/citations?hl=en&user=2mjUsP8AAAAJ&view_op=list_works&sortby=pubdate). I studied efficient language and vision models while working on my Honors Thesis, including our work optimizing the [Segment Anything Model](https://segment-anything.com/) for inference on the edge for disaster response information retrieval.
