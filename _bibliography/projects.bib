@@ -1,0 +1,45 @@
+@article{ICDM25_lo_et_al,
+  abbr = {ICDM 2025},
+  title = {Crisis Observatory: Extracting Credible Signals During a Crisis in the Age of LLMs},
+  author = {Lo, K. and Maneriker, P. and Sai Ganesh, S. and Winecki, D. and Garrett, K. and Hyder, A. and Nandi, A. and Shalin, V. and Bowen, S. and Sheth, A. and Parthasarathy, S.},
+  abstract = {Systems for crisis response have required several different models for the analysis of unstructured text, such as identifying needs, locations, topics, routing, and matching of needs with available responders. Large Language Models (LLMs) have replaced task-specific models across various language processing tasks. However, LLMs are known to be limited by their training data, collected before the crisis. In this demo, we explore the use of LLMs for crisis response scenarios with rapidly evolving information environments. We show how augmentation of these models with external reliable sources of crisis-specific information can help build adaptive systems for response.},
+  journal = {IEEE International Conference on Data Mining},
+  location = {Washington, D.C.},
+  year = {2025},
+  month = {November},
+  publisher = IEEE,
+  pdf = {ICDM CO Demo.pdf},
+  poster = {ICDM CO Poster.pdf},
+  preview = {cocast_preview.png},
+  selected = {true}
+}
+
+@project{rise_sam,
+  abbr = {NSF SROP},
+  title = {Optimizing Transformer Models for Image Segmentation on the Edge},
+  author = {Sai Ganesh, S. and Parthasarathy, S.},
+  abstract = {Vision transformer-based (ViT) models have achieved state-of-the-art performance in computer vision tasks by effectively capturing nuanced global relationships between image features. Despite their success, these models are computationally intensive and challenging to deploy on resource-constrained edge devices without dedicated GPUs, such as drones and satellites. This work addresses the optimization of ViT models for enhanced resource efficiency, enabling high-performance inference on low-powered edge devices in a disaster response setting. We focus on Meta's state-of-the-art Segment Anything Model (SAM) for semantic image segmentation, implementing a series of architectural and hardware-specific modifications to improve its viability for edge deployment. Our optimizations include (1) a faster attention mechanism, (2) post-training weight and activation quantization, and (3) PyTorch tensor operation optimizations. These enhancements result in an over 40% speedup in inference time with minimal degradation in segmentation quality on the SA-1B image dataset.},
+  year = {2023},
+  category = {NSF RISE Summer Research Opportunities Program},
+  importance = {1},
+  poster = {sam_poster.pdf},
+  github = {https://github.com/Sriram-Sai-Ganesh},
+  preview = {sam_results_slide.png}
+}
+
+@project{autoac,
+  title = {AutoAC: Agentic Self-Refinement for Competitive Programming},
+  author = {Sai Ganesh, S. and Pham, R.},
+  abstract = {We introduce AutoAC, an agent-computer interface (ACI) for agentic self-refinement in competitive programming that couples LLM code generation with grounded feedback from an online-judge-style execution loop. Competitive programming provides a compelling testbed due to its compositional algorithmic demands and automated evaluation via hidden test cases and verdicts such as WA/TLE/AC. AutoAC extends a baseline “prompt → solution → judge” workflow with (i) multi-agent chain-of-thought specialization, separating high-level planning from implementation, and (ii) automated stress testing, where the agent synthesizes small counterexample-seeking test generators and brute-force verifiers to surface failure cases and iteratively repair solutions. We formalize the setting in terms of problem statements, constraints, sample and hidden test sets, and evaluate with Solve Rate (SR) and Normalized Test-case Pass Rate (NTPR). Experiments on 300 problems from the CSES Problem Set across multiple open LLM families show that domain-specific CoT prompting improves partial correctness and that stress-testing yields substantial gains for stronger models; for example, on Qwen2.5-14B-Instruct, adding stress-testing to the best prompt condition increases performance by +5.97 NTPR and +6.33 SR (absolute). Overall, AutoAC demonstrates that embedding competitive-programming debugging practices into an ACI enables measurable improvements in reliable code generation under hidden-test evaluation.},
+  year = {2025},
+  month = {May},
+  category = {},
+  importance = {1},
+  slides = {autoac_slides.pdf},
+  pdf = {autoac_paper.pdf},
+  github = {https://github.com/Sriram-Sai-Ganesh/autoac},
+  preview = {autoac_preview.png}
+}
+
+
+
