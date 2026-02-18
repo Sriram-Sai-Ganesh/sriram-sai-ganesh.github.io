@@ -12,6 +12,6 @@ nav_order: 4
 
 <div class="publications">
 
-{% bibliography --file slides --template project_bib --group_by category --group_order reading groups,courses%}
+{% bibliography --file slides --template project_bib --group_by category --group_order descending%}
 
 </div>
