@@ -183,6 +183,11 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {% if entry.presented %}
+    <div class="presented" style="color: gray;">
+      Slides presented at {{ entry.presented }}
+    </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
@@ -192,11 +197,6 @@
       {% if entry.demo %}
         <a href="{{ entry.demo }}" class="btn btn-sm z-depth-0" role="button">
           <i class="fas fa-play-circle"></i> Demo
-        </a>
-      {% endif %}
-      {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">
-          <i class="fas fa-globe"></i> Website
         </a>
       {% endif %}
       {% if entry.pdf %}
@@ -246,6 +246,11 @@
             <i class="fas fa-file-powerpoint"></i> Slides
           </a>
         {% endif %}
+      {% endif %}
+      {% if entry.website %}
+        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">
+          <i class="fas fa-globe"></i> Website
+        </a>
       {% endif %}
       {% if entry.github %}
         <a href="{{ entry.github }}" class="btn btn-sm z-depth-0" role="button">
