@@ -3,7 +3,7 @@ layout: page
 title: selected presentations
 nav_title: slides
 permalink: /slides/
-description: 
+description:
 nav: true
 nav_order: 4
 ---

@@ -3,7 +3,7 @@ layout: page
 title: selected projects
 nav_title: projects
 permalink: /projects/
-description: 
+description:
 nav: true
 nav_order: 3
 ---
