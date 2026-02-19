@@ -51,100 +51,100 @@
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
     {% if entry.author_array %}
-    <div class="author">
-      {% assign author_array_size = entry.author_array | size %}
+      <div class="author">
+        {% assign author_array_size = entry.author_array | size %}
 
-      {% assign author_array_limit = author_array_size %}
-      {% if site.max_author_limit and author_array_size > site.max_author_limit %}
-        {% assign author_array_limit = site.max_author_limit %}
-      {% endif %}
-
-      {%- for author in entry.author_array limit: author_array_limit -%}
-        {% assign author_is_self = false %}
-        {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
-        {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        {% if site.scholar.last_name contains author_last_name %}
-          {% if site.scholar.first_name contains author.first %}
-            {% assign author_is_self = true %}
-          {% endif %}
-        {%- endif -%}
-        {% assign coauthor_url = null %}
-        {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
-        {% if site.data.coauthors[clean_last_name] %}
-          {%- for coauthor in site.data.coauthors[clean_last_name] -%}
-            {% if coauthor.firstname contains author.first %}
-              {%- assign coauthor_url = coauthor.url -%}
-              {% break %}
-            {%- endif -%}
-          {% endfor %}
-        {%- endif -%}
-
-        {%- if forloop.length > 1 -%}
-          {% if forloop.first == false -%}
-            {%- if forloop.length > 2 %}, {% elsif forloop.length == 2 %}  {% endif %}
-          {%- endif %}
-          {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
+        {% assign author_array_limit = author_array_size %}
+        {% if site.max_author_limit and author_array_size > site.max_author_limit %}
+          {% assign author_array_limit = site.max_author_limit %}
         {% endif %}
-        {%- if author_is_self -%}
-          <em>
-            {{- author.first }}
-            {{ author_last_html -}}
-          </em>
-        {%- else -%}
-          {%- if coauthor_url -%}
-            <a href="{{ coauthor_url }}">
+
+        {%- for author in entry.author_array limit: author_array_limit -%}
+          {% assign author_is_self = false %}
+          {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+          {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+          {% if site.scholar.last_name contains author_last_name %}
+            {% if site.scholar.first_name contains author.first %}
+              {% assign author_is_self = true %}
+            {% endif %}
+          {%- endif -%}
+          {% assign coauthor_url = null %}
+          {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
+          {% if site.data.coauthors[clean_last_name] %}
+            {%- for coauthor in site.data.coauthors[clean_last_name] -%}
+              {% if coauthor.firstname contains author.first %}
+                {%- assign coauthor_url = coauthor.url -%}
+                {% break %}
+              {%- endif -%}
+            {% endfor %}
+          {%- endif -%}
+
+          {%- if forloop.length > 1 -%}
+            {% if forloop.first == false -%}
+              {%- if forloop.length > 2 %}, {% elsif forloop.length == 2 %}  {% endif %}
+            {%- endif %}
+            {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
+          {% endif %}
+          {%- if author_is_self -%}
+            <em>
               {{- author.first }}
               {{ author_last_html -}}
-            </a>
+            </em>
           {%- else -%}
-            {{- author.first }}
-            {{ author_last_html -}}
-          {% endif %}
-        {%- endif -%}
-      {% endfor %}
-      {%- assign more_authors = author_array_size | minus: author_array_limit -%}
+            {%- if coauthor_url -%}
+              <a href="{{ coauthor_url }}">
+                {{- author.first }}
+                {{ author_last_html -}}
+              </a>
+            {%- else -%}
+              {{- author.first }}
+              {{ author_last_html -}}
+            {% endif %}
+          {%- endif -%}
+        {% endfor %}
+        {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
-      {%- assign more_authors_hide = more_authors | append: ' more author' -%}
-      {% if more_authors > 0 %}
-        {%- if more_authors > 1 -%}
-          {% assign more_authors_hide = more_authors_hide | append: 's' %}
-        {%- endif -%}
-        {% assign more_authors_show = '' %}
-        {%- for author in entry.author_array offset: author_array_limit -%}
-          {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
-          {% unless forloop.last %}
-            {% assign more_authors_show = more_authors_show | append: ', ' %}
-          {% endunless %}
-        {%- endfor -%}
-        {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        , and
-        <span
-          class="more-authors"
-          title="click to view {{ more_authors_hide }}"
-          onclick="
-              var element = $(this);
-              element.attr('title', '');
-              var more_authors_text = element.text() == '{{ more_authors_hide }}' ? '{{ more_authors_show }}' : '{{ more_authors_hide }}';
-              var cursorPosition = 0;
-              var textAdder = setInterval(function(){
-                element.html(more_authors_text.substring(0, cursorPosition + 1));
-                if (++cursorPosition == more_authors_text.length){
-                  clearInterval(textAdder);
-                }
-            }, '{{ site.more_authors_animation_delay }}');
-          "
-        >
-          {{- more_authors_hide -}}
-        </span>
-      {% endif %}
-    </div>
+        {%- assign more_authors_hide = more_authors | append: ' more author' -%}
+        {% if more_authors > 0 %}
+          {%- if more_authors > 1 -%}
+            {% assign more_authors_hide = more_authors_hide | append: 's' %}
+          {%- endif -%}
+          {% assign more_authors_show = '' %}
+          {%- for author in entry.author_array offset: author_array_limit -%}
+            {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+            {% unless forloop.last %}
+              {% assign more_authors_show = more_authors_show | append: ', ' %}
+            {% endunless %}
+          {%- endfor -%}
+          {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+          , and
+          <span
+            class="more-authors"
+            title="click to view {{ more_authors_hide }}"
+            onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '{{ more_authors_hide }}' ? '{{ more_authors_show }}' : '{{ more_authors_hide }}';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.html(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '{{ site.more_authors_animation_delay }}');
+            "
+          >
+            {{- more_authors_hide -}}
+          </span>
+        {% endif %}
+      </div>
     {% endif %}
-    
+
     <!-- Description -->
     {% if entry.description %}
-    <div class="description" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
-      {{ entry.description }}
-    </div>
+      <div class="description" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+        {{ entry.description }}
+      </div>
     {% endif %}
 
     <!-- Journal/Book title and date -->
@@ -184,9 +184,7 @@
       {{ entry.note | strip }}
     </div>
     {% if entry.presented %}
-    <div class="presented" style="color: gray;">
-      Slides presented at {{ entry.presented }}
-    </div>
+      <div class="presented" style="color: gray;">Slides presented at {{ entry.presented }}</div>
     {% endif %}
 
     <!-- Links/Buttons -->
@@ -195,15 +193,11 @@
         <a class="abstract btn btn-sm z-depth-0" role="button"><i class="fas fa-file-alt"></i> Abs</a>
       {% endif %}
       {% if entry.demo %}
-        <a href="{{ entry.demo }}" class="btn btn-sm z-depth-0" role="button">
-          <i class="fas fa-play-circle"></i> Demo
-        </a>
+        <a href="{{ entry.demo }}" class="btn btn-sm z-depth-0" role="button"> <i class="fas fa-play-circle"></i> Demo </a>
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">
-            <i class="fas fa-file-pdf"></i> PDF
-          </a>
+          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button"> <i class="fas fa-file-pdf"></i> PDF </a>
         {% else %}
           <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
             <i class="fas fa-file-pdf"></i> PDF
@@ -211,25 +205,17 @@
         {% endif %}
       {% endif %}
       {% if entry.video %}
-        <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">
-          <i class="fas fa-video"></i> Video
-        </a>
+        <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button"> <i class="fas fa-video"></i> Video </a>
       {% endif %}
       {% if entry.blog %}
-        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">
-          <i class="fas fa-blog"></i> Blog
-        </a>
+        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button"> <i class="fas fa-blog"></i> Blog </a>
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">
-          <i class="fas fa-code"></i> Code
-        </a>
+        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button"> <i class="fas fa-code"></i> Code </a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
-          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">
-            <i class="fas fa-image"></i> Poster
-          </a>
+          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button"> <i class="fas fa-image"></i> Poster </a>
         {% else %}
           <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
             <i class="fas fa-image"></i> Poster
@@ -238,9 +224,7 @@
       {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
-          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">
-            <i class="fas fa-file-powerpoint"></i> Slides
-          </a>
+          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button"> <i class="fas fa-file-powerpoint"></i> Slides </a>
         {% else %}
           <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">
             <i class="fas fa-file-powerpoint"></i> Slides
@@ -248,19 +232,13 @@
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">
-          <i class="fas fa-globe"></i> Website
-        </a>
+        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button"> <i class="fas fa-globe"></i> Website </a>
       {% endif %}
       {% if entry.github %}
-        <a href="{{ entry.github }}" class="btn btn-sm z-depth-0" role="button">
-          <i class="fab fa-github"></i> GitHub
-        </a>
+        <a href="{{ entry.github }}" class="btn btn-sm z-depth-0" role="button"> <i class="fab fa-github"></i> GitHub </a>
       {% endif %}
       {% if entry.docs %}
-        <a href="{{ entry.docs }}" class="btn btn-sm z-depth-0" role="button">
-          <i class="fas fa-book"></i> Docs
-        </a>
+        <a href="{{ entry.docs }}" class="btn btn-sm z-depth-0" role="button"> <i class="fas fa-book"></i> Docs </a>
       {% endif %}
     </div>
 
