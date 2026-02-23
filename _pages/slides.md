@@ -3,7 +3,7 @@ layout: page
 title: selected presentations
 nav_title: slides
 permalink: /slides/
-description:
+description: References point to papers by their original authors; slides are my own.
 nav: true
 nav_order: 4
 ---
@@ -12,6 +12,6 @@ nav_order: 4
 
 <div class="publications">
 
-{% bibliography --file slides --template project_bib --group_by category --group_order descending%}
+{% bibliography --file slides --template slides_bib --group_by category --group_order descending%}
 
 </div>
