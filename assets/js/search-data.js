@@ -416,12 +416,14 @@ ninja.data = [{
           section: "News",},{id: "news-crisis-observatory-has-been-accepted-at-icdm-25",
           title: 'Crisis Observatory has been accepted at ICDM ‘25.',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{
+          section: "News",},{
+        id: 'social-bluesky',
+        title: 'Bluesky',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://bsky.app/profile/sriram636.bsky.social", "_blank");
+        },
+      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
@@ -441,6 +443,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/sriramsaiganesh", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/https://orcid.org/0009-0009-1979-9290", "_blank");
         },
       },{
       id: 'light-theme',
