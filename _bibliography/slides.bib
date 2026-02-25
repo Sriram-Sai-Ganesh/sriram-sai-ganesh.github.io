@@ -1,20 +1,19 @@
 @misc{sdpo,
   title = {Reinforcement Learning via Self-Distillation},
   author = {Jonas Hübotter and Frederike Lübeck and Lejs Behric and Anton Baumann and Marco Bagatella and Daniel Marta and Ido Hakimi and Idan Shenfeld and Thomas Kleine Buening and Carlos Guestrin and Andreas Krause},
+  journal = {arXiv preprint arXiv:2601.20802},
   year = {2026},
   month = {February},
-  eprint = {2601.20802},
-  archiveprefix = {arXiv},
-  primaryclass = {cs.LG},
   url = {https://arxiv.org/abs/2601.20802},
   pdf = {https://arxiv.org/pdf/2601.20802},
   abstract = {We introduce Self-Distilled Policy Optimization (SDPO), a novel reinforcement learning algorithm that leverages self-distillation to enhance policy learning. SDPO iteratively distills knowledge from the current policy into a student model, which is then used to update the policy. This approach allows for more efficient learning by effectively utilizing the information contained in the policy's own behavior. We provide theoretical analysis of SDPO's convergence properties and demonstrate its empirical performance on a range of benchmark tasks, showing significant improvements over traditional policy optimization methods. Our results suggest that self-distillation can be a powerful tool for improving reinforcement learning algorithms, paving the way for more efficient and effective policy learning in complex environments.},
   github = {https://github.com/lasgroup/SDPO},
-  category = {reading groups},
   website = {https://self-distillation.github.io/SDPO},
   preview = {sdpo_preview.webp},
   slides = {https://docs.google.com/presentation/d/1CRNruMXujCZYwf3CIvVMTOLO_7gSKHsJu_xYZsiQSC8/edit?usp=sharing},
-  abbr = {arXiv}
+  abbr = {arXiv},
+  category = {reading groups},
+  presented = {JHU's NLP reading group.}
 }
 
 @inproceedings{wan2025enhancing,
@@ -119,7 +118,6 @@
   year = {2022},
   author = {Alayrac, Jean-Baptiste and Donahue, Jeff and Luc, Pauline and Miech, Antoine and Barr, Iain and Hasson, Yana and Lenc, Karel and Mensch, Arthur and Millican, Katherine and Reynolds, Malcolm and Ring, Roman and Rutherford, Eliza and Cabi, Serkan and Han, Tengda and Gong, Zhitao and Samangooei, Sina and Monteiro, Marianne and Menick, Jacob L and Borgeaud, Sebastian and Brock, Andy and Nematzadeh, Aida and Sharifzadeh, Sahand and Bi\'{n}kowski, Miko\l aj and Barreira, Ricardo and Vinyals, Oriol and Zisserman, Andrew and Simonyan, Kar\'{e}n},
   booktitle = {Advances in Neural Information Processing Systems},
-  pages = {23716--23736},
   publisher = {Curran Associates, Inc.},
   title = {Flamingo: a Visual Language Model for Few-Shot Learning},
   abstract = {Building models that can be rapidly adapted to novel tasks using only a handful of annotated examples is an open challenge for multimodal machine learning research. We introduce Flamingo, a family of Visual Language Models (VLM) with this ability. We propose key architectural innovations to: (i) bridge powerful pretrained vision-only and language-only models, (ii) handle sequences of arbitrarily interleaved visual and textual data, and (iii) seamlessly ingest images or videos as inputs. Thanks to their flexibility, Flamingo models can be trained on large-scale multimodal web corpora containing arbitrarily interleaved text and images, which is key to endow them with in-context few-shot learning capabilities. We perform a thorough evaluation of our models, exploring and measuring their ability to rapidly adapt to a variety of image and video tasks. These include open-ended tasks such as visual question-answering, where the model is prompted with a question which it has to answer; captioning tasks, which evaluate the ability to describe a scene or an event; and close-ended tasks such as multiple-choice visual question-answering. For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples. On numerous benchmarks, Flamingo outperforms models fine-tuned on thousands of times more task-specific data.},
