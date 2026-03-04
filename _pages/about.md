@@ -6,7 +6,7 @@ subtitle: M.S.E. at Johns Hopkins University
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.webp
   image_circular: false # crops the image to make it circular
   more_info:
 
@@ -30,4 +30,4 @@ Broadly, I am interested in **generalizable methods for compute-optimal machine 
 
 Currently, I am working on a family of **transformer decoder architectures** that will allow for **much faster inference**. Improved throughput enables faster test-time reasoning, speculative decoding, and lower-latency agentic workflows, among other applications.
 
-Before Johns Hopkins, I earned my B.S. at The Ohio State University, where I was fortunate to be advised by [Dr. Srinivasan Parthasarathy](https://scholar.google.com/citations?hl=en&user=2mjUsP8AAAAJ&view_op=list_works&sortby=pubdate). I studied efficient language and vision models while working on my thesis, including our work optimizing the [Segment Anything Model](https://segment-anything.com/) for edge inference for disaster-response information retrieval.
+Before Johns Hopkins, I earned my B.S. at The Ohio State University, where I was fortunate to be advised by [Dr. Srinivasan Parthasarathy](https://scholar.google.com/citations?hl=en&user=2mjUsP8AAAAJ&view_op=list_works&sortby=pubdate). I studied efficient language and vision models while working on my thesis, including [our work](https://www.sriram.bio/assets/pdf/sam_poster.pdf) optimizing the Segment Anything Model for inference on edge devices.
