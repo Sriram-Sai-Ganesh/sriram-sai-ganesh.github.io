@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a **Master’s student in Computer Science** ([HLT](<[HLT](https://www.clsp.jhu.edu/human-language-technology-masters/)>)) at Johns Hopkins University, advised by [Dr. Jason Eisner](https://www.cs.jhu.edu/~jason/) at the [Center for Language and Speech Processing](https://www.clsp.jhu.edu/).
+I am a **Master’s student in Computer Science** ([HLT](https://www.clsp.jhu.edu/human-language-technology-masters/)) at Johns Hopkins University, advised by [Dr. Jason Eisner](https://www.cs.jhu.edu/~jason/) at the [Center for Language and Speech Processing](https://www.clsp.jhu.edu/).
 
 Broadly, I am interested in **generalizable methods for compute-optimal machine learning**. Attention as a primitive has been a powerful tool for sequence modeling in language and vision tasks; can we utilize this expressive power without paying a cost that is quadratic in sequence length?
 
