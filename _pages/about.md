@@ -26,8 +26,8 @@ latest_posts:
 
 I am a **Master’s student in Computer Science** ([HLT](https://www.clsp.jhu.edu/human-language-technology-masters/)) at Johns Hopkins University, advised by [Dr. Jason Eisner](https://www.cs.jhu.edu/~jason/) at the [Center for Language and Speech Processing](https://www.clsp.jhu.edu/).
 
-Broadly, I am interested in **generalizable methods for compute-optimal machine learning**. Attention as a primitive has been a powerful tool for sequence modeling in language and vision tasks; can we utilize this expressive power without paying a cost that is quadratic in sequence length?
+Broadly, I am interested in **principled and generalizable** methods to improve large language models. Currently, I am working on a family of **transformer decoder architectures** that will allow for **much faster inference**.
 
-Currently, I am working on a family of **transformer decoder architectures** that will allow for **much faster inference**. Improved throughput enables faster test-time reasoning, speculative decoding, and lower-latency agentic workflows, among other applications.
+Attention as a primitive has been a powerful tool for sequence modeling in language and vision tasks; can we utilize this expressive power without paying a cost that is quadratic in sequence length? Improved throughput enables faster test-time reasoning, speculative decoding, and lower-latency agentic workflows, among other applications.
 
 Before Johns Hopkins, I earned my B.S. at The Ohio State University, where I was fortunate to be advised by [Dr. Srinivasan Parthasarathy](https://scholar.google.com/citations?hl=en&user=2mjUsP8AAAAJ&view_op=list_works&sortby=pubdate). I studied efficient language and vision models while working on my thesis, including [our work](https://www.sriram.bio/assets/pdf/sam_poster.pdf) optimizing the Segment Anything Model for inference on edge devices.
