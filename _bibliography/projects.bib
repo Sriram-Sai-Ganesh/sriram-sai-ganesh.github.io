@@ -11,11 +11,11 @@
   pdf = {ICDM CO Demo.pdf},
   poster = {ICDM CO Poster.pdf},
   preview = {cocast_preview.webp},
-  selected = {true}
+  selected = {false}
 }
 
 @project{autoac,
-  abbr = {NLP for CP},
+  abbr = {Multi-Agent Systems},
   title = {AutoAC: Agentic Self-Refinement for Competitive Programming},
   author = {Sai Ganesh, S. and Pham, R.},
   abstract = {We introduce AutoAC, an agent-computer interface (ACI) for agentic self-refinement in competitive programming that couples LLM code generation with grounded feedback from an online-judge–style execution loop. AutoAC extends a baseline ``prompt-solution-judge'' workflow with (i) multi-agent chain-of-thought specialization and (ii) automated stress testing. Experiments on 300 problems from the CSES Problem Set across multiple open LLM families show that domain-specific CoT prompting improves partial correctness and that stress-testing yields substantial gains for stronger models; for example, on Qwen2.5-14B-Instruct, adding stress-testing to the best prompt condition increases performance by +5.97% NTPR and +6.33% SR (absolute). Overall, AutoAC demonstrates that embedding competitive-programming debugging practices into an ACI enables measurable improvements in reliable code generation under hidden-test evaluation.},
@@ -26,11 +26,12 @@
   slides = {autoac_slides.pdf},
   pdf = {autoac_paper.pdf},
   github = {https://github.com/Sriram-Sai-Ganesh/autoac},
-  preview = {autoac_preview.webp}
+  preview = {autoac_preview.webp},
+  selected = {true}
 }
 
 @project{rise_sam,
-  abbr = {NSF SROP},
+  abbr = {Efficient ViTs},
   title = {Optimizing Transformer Models for Image Segmentation on the Edge},
   author = {Sai Ganesh, S. and Parthasarathy, S.},
   abstract = {Vision transformer-based (ViT) models have achieved state-of-the-art performance in computer vision tasks by effectively capturing nuanced global relationships between image features. Despite their success, these models are computationally intensive and challenging to deploy on resource-constrained edge devices without dedicated GPUs, such as drones and satellites. This work addresses the optimization of ViT models for enhanced resource efficiency, enabling high-performance inference on low-powered edge devices in a disaster response setting. We focus on Meta's state-of-the-art Segment Anything Model (SAM) for semantic image segmentation, implementing a series of architectural and hardware-specific modifications to improve its viability for edge deployment. Our optimizations include (1) a faster attention mechanism, (2) post-training weight and activation quantization, and (3) PyTorch tensor operation optimizations. These enhancements result in an over 40% speedup in inference time with minimal degradation in segmentation quality on the SA-1B image dataset.},
@@ -39,7 +40,8 @@
   importance = {1},
   poster = {sam_poster.pdf},
   github = {https://github.com/Sriram-Sai-Ganesh},
-  preview = {sam_results_slide.webp}
+  preview = {sam_results_slide.webp},
+  selected = {true}
 }
 
 @project{panvis,
@@ -54,7 +56,8 @@
   slides = {panvis_slides.pdf},
   pdf = {panvis_paper.pdf},
   github = {https://github.com/Sriram-Sai-Ganesh/panvis},
-  preview = {panvis_preview.webp}
+  preview = {panvis_preview.webp},
+  selected = {false}
 }
 }
 
@@ -70,5 +73,6 @@
   slides = {causal_fairsum_slides.pdf},
   pdf = {causal_fairsum.pdf},
   github = {https://github.com/AdityaVadlamani/Causal_FairSum/tree/main},
-  preview = {causal_fairsum_preview.webp}
+  preview = {causal_fairsum_preview.webp},
+  selected = {false}
 }
