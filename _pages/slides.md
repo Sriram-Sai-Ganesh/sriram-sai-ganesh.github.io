@@ -3,7 +3,7 @@ layout: page
 title: selected presentations
 nav_title: slides
 permalink: /slides/
-description: References point to papers by their original authors; slides are my own.
+description: Slides are my own; references point to papers by their original authors.
 nav: true
 nav_order: 4
 ---
