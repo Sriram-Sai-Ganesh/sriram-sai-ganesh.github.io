@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-selected-presentations",
           title: "selected presentations",
-          description: "References point to papers by their original authors; slides are my own.",
+          description: "Slides are my own; references point to papers by their original authors.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/slides/";
