@@ -416,6 +416,12 @@ ninja.data = [{
           section: "News",},{id: "news-crisis-observatory-has-been-accepted-at-icdm-25",
           title: 'Crisis Observatory has been accepted at ICDM ‘25.',
           description: "",
+          section: "News",},{id: "news-great-to-be-attending-the-trillion-parameter-conference",
+          title: 'Great to be attending the Trillion Parameter Conference!',
+          description: "",
+          section: "News",},{id: "news-tinykgi-has-been-accepted-to-frontiers-of-cs",
+          title: 'TinyKGI has been accepted to Frontiers of CS.',
+          description: "",
           section: "News",},{
         id: 'social-bluesky',
         title: 'Bluesky',
