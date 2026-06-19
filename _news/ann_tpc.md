@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Great to be attending the [Trillion Parameter Conference](https://tpc26.org/)!
+Great to be attending [TPC '26](https://tpc26.org/)!
