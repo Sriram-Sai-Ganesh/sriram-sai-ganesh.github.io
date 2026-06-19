@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-[TinyKGI](https://www.sriram.io/assets/pdf/frontiers_tinykgi.pdf) has been accepted to [Frontiers of CS](https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2026.1817034).
+[TinyKGI](https://www.sriram.io/assets/pdf/frontiers_tinykgi.pdf) has been accepted to [Frontiers in CS](https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2026.1817034).
