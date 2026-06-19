@@ -419,8 +419,8 @@ ninja.data = [{
           section: "News",},{id: "news-great-to-be-attending-tpc-26",
           title: 'Great to be attending TPC ‘26!',
           description: "",
-          section: "News",},{id: "news-tinykgi-has-been-accepted-to-frontiers-of-cs",
-          title: 'TinyKGI has been accepted to Frontiers of CS.',
+          section: "News",},{id: "news-tinykgi-has-been-accepted-to-frontiers-in-cs",
+          title: 'TinyKGI has been accepted to Frontiers in CS.',
           description: "",
           section: "News",},{
         id: 'social-bluesky',
