@@ -8,7 +8,7 @@
 # acm_id: # your dl.acm.org/profile/id
 # blogger_url: # your blogger URL
 bluesky_url: https://bsky.app/profile/sriram636.bsky.social
-# dblp_url: # your DBLP profile url
+dblp_url: https://dblp.org/pid/430/2239.html
 # discord_id: # your discord id (18-digit unique numerical identifier)
 email: ssaigan1@jh.edu # your email address
 # facebook_id: # your facebook id
@@ -32,9 +32,9 @@ orcid_id: https://orcid.org/0009-0009-1979-9290
 # pinterest_id: # your pinterest id
 # publons_id: # your ID on Publons
 # quora_username: # your Quora username
-# research_gate_profile: # your profile on ResearchGate
+research_gate_profile: https://www.researchgate.net/profile/Sriram-Sai-Ganesh
 # rss_icon: true # comment this line to hide the RSS icon
-# scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+scholar_userid: NHUfWucAAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
