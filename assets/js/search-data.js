@@ -422,6 +422,12 @@ ninja.data = [{
           section: "News",},{id: "news-tinykgi-has-been-accepted-to-frontiers-in-cs",
           title: 'TinyKGI has been accepted to Frontiers in CS.',
           description: "",
+          section: "News",},{id: "news-i-received-a-5-000-thinking-machines-research-grant-to-study-on-policy-distillation",
+          title: 'I received a $5,000 Thinking Machines research grant to study on-policy distillation.',
+          description: "",
+          section: "News",},{id: "news-i-will-be-a-course-assistant-for-cs-465-665-nlp-this-fall",
+          title: 'I will be a course assistant for CS 465/665 NLP this fall!',
+          description: "",
           section: "News",},{
         id: 'social-scholar',
         title: 'Google Scholar',
