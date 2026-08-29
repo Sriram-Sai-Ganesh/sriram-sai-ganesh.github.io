@@ -423,25 +423,11 @@ ninja.data = [{
           title: 'TinyKGI has been accepted to Frontiers in CS.',
           description: "",
           section: "News",},{
-        id: 'social-bluesky',
-        title: 'Bluesky',
+        id: 'social-scholar',
+        title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://bsky.app/profile/sriram636.bsky.social", "_blank");
-        },
-      },{
-        id: 'social-dblp',
-        title: 'DBLP',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://dblp.org/pid/430/2239.html", "_blank");
-        },
-      },{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%73%73%61%69%67%61%6E%31@%6A%68.%65%64%75", "_blank");
+          window.open("https://scholar.google.com/citations?user=NHUfWucAAAAJ", "_blank");
         },
       },{
         id: 'social-github',
@@ -451,6 +437,13 @@ ninja.data = [{
           window.open("https://github.com/sriram-sai-ganesh", "_blank");
         },
       },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%73%73%61%69%67%61%6E%31@%6A%68.%65%64%75", "_blank");
+        },
+      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
@@ -458,11 +451,11 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/sriramsaiganesh", "_blank");
         },
       },{
-        id: 'social-orcid',
-        title: 'ORCID',
+        id: 'social-dblp',
+        title: 'DBLP',
         section: 'Socials',
         handler: () => {
-          window.open("https://orcid.org/0009-0009-1979-9290", "_blank");
+          window.open("https://dblp.org/pid/430/2239.html", "_blank");
         },
       },{
         id: 'social-researchgate',
@@ -472,11 +465,11 @@ ninja.data = [{
           window.open("https://www.researchgate.net/profile/Sriram-Sai-Ganesh/", "_blank");
         },
       },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
+        id: 'social-orcid',
+        title: 'ORCID',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=NHUfWucAAAAJ", "_blank");
+          window.open("https://orcid.org/0009-0009-1979-9290", "_blank");
         },
       },{
       id: 'light-theme',
