@@ -27,7 +27,7 @@ latest_posts:
 
 I am a **Master’s student in Computer Science** ([HLT](https://www.clsp.jhu.edu/human-language-technology-masters/)) at Johns Hopkins University, advised by [Dr. Jason Eisner](https://www.cs.jhu.edu/~jason/) at the [Center for Language and Speech Processing](https://www.clsp.jhu.edu/).
 
-Broadly, I am interested in **principled and generalizable** methods to improve large language models. Currently, I am working on a family of **transformer decoder architectures** that will allow for **much faster inference**.
+Broadly, I am interested in **principled and generalizable** methods to improve large language models. Currently, I am working on a family of transformer decoder architectures that will allow for much faster inference.
 
 Attention as a primitive has been a powerful tool for sequence modeling in language and vision tasks; can we utilize this expressive power without paying a cost that is quadratic in sequence length? Improved throughput enables faster test-time reasoning, speculative decoding, and lower-latency agentic workflows, among other applications.
 
