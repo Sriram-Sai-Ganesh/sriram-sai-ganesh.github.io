@@ -7,13 +7,15 @@
 #  username:  AlbertEinstein # your username
 # acm_id: # your dl.acm.org/profile/id
 # blogger_url: # your blogger URL
-bluesky_url: https://bsky.app/profile/sriram636.bsky.social
+# bluesky_url: https://bsky.app/profile/sriram636.bsky.social
+scholar_userid: NHUfWucAAAAJ # your Google Scholar ID
+github_username: sriram-sai-ganesh
+email: ssaigan1@jh.edu # your email address
+linkedin_username: sriramsaiganesh # your LinkedIn user name
 dblp_url: https://dblp.org/pid/430/2239.html
 # discord_id: # your discord id (18-digit unique numerical identifier)
-email: ssaigan1@jh.edu # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
-github_username: sriram-sai-ganesh
 # gitlab_username: # your GitLab user name
 # hal_id: # your HAL id (https://hal.science/)
 # ieee_id: # your ieeexplore.ieee.org/author/id
@@ -24,17 +26,15 @@ github_username: sriram-sai-ganesh
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-linkedin_username: sriramsaiganesh # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
+research_gate_profile: Sriram-Sai-Ganesh
 # medium_username: # your Medium username
 orcid_id: 0009-0009-1979-9290
 # osf_id: # your OSF ID
 # pinterest_id: # your pinterest id
 # publons_id: # your ID on Publons
 # quora_username: # your Quora username
-research_gate_profile: Sriram-Sai-Ganesh
 # rss_icon: true # comment this line to hide the RSS icon
-scholar_userid: NHUfWucAAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
