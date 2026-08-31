@@ -1,0 +1,6 @@
+# URL redirects: <path on this site> -> <destination URL>
+# Each entry generates a page at {{ site.url }}/<path>/ that forwards to the target.
+# Paths are relative to the site root; no leading slash needed.
+
+meet: https://cal.com/sriram-sai-ganesh-f18p35/let-s-chat
+office-hours: https://cal.com/sriram-sai-ganesh-f18p35/nlp
