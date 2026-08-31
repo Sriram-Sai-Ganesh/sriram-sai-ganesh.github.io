@@ -9,7 +9,6 @@ module Jekyll
       # PageWithoutAFile stubs out read_yaml, so super sets up everything
       # (data, path, basename, ext) without touching the filesystem.
       super(site, site.source, path, 'index.html')
-
       data['layout'] = nil
       data['sitemap'] = false
       data['redirect_to'] = target

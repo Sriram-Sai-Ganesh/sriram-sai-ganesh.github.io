@@ -1,0 +1,29 @@
+#!/bin/bash
+# Verifies that every entry in _data/redirects.yml produced a redirect page
+# in the built site pointing at the configured destination.
+# Usage: bin/test-redirects [site_dir]   (default: _site)
+set -euo pipefail
+
+SITE_DIR="${1:-_site}"
+CONFIG="_data/redirects.yml"
+status=0
+
+while IFS= read -r line; do
+    case "$line" in \#*|'') continue ;; esac
+    path="${line%%:*}"
+    target="${line#*: }"
+    path="${path#/}"
+    file="$SITE_DIR/$path/index.html"
+
+    if [ ! -f "$file" ]; then
+        echo "FAIL /$path/ -> $file not generated"
+        status=1
+    elif ! grep -qF "$target" "$file"; then
+        echo "FAIL /$path/ -> $file does not point at $target"
+        status=1
+    else
+        echo "ok   /$path/ -> $target"
+    fi
+done < "$CONFIG"
+
+exit $status
